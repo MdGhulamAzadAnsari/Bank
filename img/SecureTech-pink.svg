@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/SecureTech-pink</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="408.579978%" gradientTransform="translate(0.000000,0.000000),scale(1.000000,0.252427),rotate(75.832933),translate(-0.000000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="144.657602%" gradientTransform="translate(0.000000,0.000000),scale(0.956694,1.000000),rotate(43.732116),translate(-0.000000,-0.000000)" id="radialGradient-2">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="265.085364%" gradientTransform="translate(0.000000,0.000000),scale(0.407332,1.000000),rotate(22.162639),translate(-0.000000,-0.000000)" id="radialGradient-3">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="265.270598%" gradientTransform="translate(0.000000,0.000000),scale(0.407000,1.000000),rotate(22.146343),translate(-0.000000,-0.000000)" id="radialGradient-4">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="265.455853%" gradientTransform="translate(0.000000,0.000000),scale(0.406669,1.000000),rotate(22.130070),translate(-0.000000,-0.000000)" id="radialGradient-5">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="141.430105%" gradientTransform="translate(0.000000,0.000000),scale(0.999876,1.000000),rotate(44.996456),translate(-0.000000,-0.000000)" id="radialGradient-6">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="141.425495%" gradientTransform="translate(0.000000,0.000000),scale(1.000000,0.999941),rotate(45.001677),translate(-0.000000,-0.000000)" id="radialGradient-7">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="206.297805%" gradientTransform="translate(0.000000,0.000000),scale(1.000000,0.554199),rotate(61.004814),translate(-0.000000,-0.000000)" id="radialGradient-8">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="162.884396%" gradientTransform="translate(0.000000,0.000000),scale(0.777761,1.000000),rotate(37.874384),translate(-0.000000,-0.000000)" id="radialGradient-9">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="334.115908%" gradientTransform="translate(0.000000,0.000000),scale(1.000000,0.313676),rotate(72.584596),translate(-0.000000,-0.000000)" id="radialGradient-10">
+            <stop stop-color="#E1226C" offset="0%"></stop>
+            <stop stop-color="#8B2885" offset="76.9168085%"></stop>
+            <stop stop-color="#712A8D" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Icon/SecureTech-pink" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Page-1" transform="translate(6.000000, 7.000000)" stroke-width="1.4">
+            <path d="M10.2078,45.1921 L3.7758,45.1921 C2.0768,45.1921 0.6998,43.8141 0.6998,42.1151 L0.6998,3.7761 C0.6998,2.0791 2.0768,0.7001 3.7758,0.7001 L10.2098,0.7001 L11.9308,0.7001" id="Stroke-1" stroke="url(#radialGradient-1)"></path>
+            <path d="M15.5965,0.7 L59.0245,0.7 C60.7235,0.7 62.1025,2.079 62.1025,3.776 L62.1025,42.115 C62.1025,43.814 60.7235,45.192 59.0245,45.192 L52.2445,45.192" id="Stroke-3" stroke="url(#radialGradient-2)"></path>
+            <path d="M7.7528,5.9656 L10.2078,5.9656" id="Stroke-5" stroke="url(#radialGradient-3)"></path>
+            <path d="M13.4383,5.9656 L15.8953,5.9656" id="Stroke-7" stroke="url(#radialGradient-4)"></path>
+            <path d="M19.1258,5.9656 L21.5848,5.9656" id="Stroke-9" stroke="url(#radialGradient-5)"></path>
+            <path d="M35.4422,44.2576 C35.4422,46.4906 33.6332,48.2996 31.4012,48.2996 C29.1692,48.2996 27.3582,46.4906 27.3582,44.2576 C27.3582,42.0266 29.1692,40.2166 31.4012,40.2166 C33.6332,40.2166 35.4422,42.0266 35.4422,44.2576 Z" id="Stroke-11" stroke="url(#radialGradient-6)"></path>
+            <path d="M44.6571,55.0388 C41.5241,58.8868 36.7491,61.3448 31.4011,61.3448 C21.9641,61.3448 14.3151,53.6948 14.3151,44.2578 C14.3151,34.8218 21.9641,27.1728 31.4011,27.1728 C40.8371,27.1728 48.4851,34.8218 48.4851,44.2578 C48.4851,46.1048 48.1941,47.8828 47.6511,49.5478" id="Stroke-13" stroke="url(#radialGradient-7)"></path>
+            <path d="M46.8856,51.4871 C46.6726,51.8831 45.9926,53.1591 45.7506,53.5351" id="Stroke-15" stroke="url(#radialGradient-8)"></path>
+            <path d="M18.2313,33.3748 L18.2313,26.1598 C18.2313,18.8678 24.1633,12.9358 31.4563,12.9358 C38.7493,12.9358 44.6803,18.8678 44.6803,26.1598 L44.6803,33.5068" id="Stroke-17" stroke="url(#radialGradient-9)"></path>
+            <path d="M31.4139,51.4871 L31.4129,48.2991" id="Stroke-19" stroke="url(#radialGradient-10)"></path>
+        </g>
+    </g>
+</svg>

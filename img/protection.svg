@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/BuyerProtection</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="130.781948%" gradientTransform="translate(0.000000,0.000000),scale(0.983324,1.000000),rotate(49.874222),translate(-0.000000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#D51286" offset="0%"></stop>
+            <stop stop-color="#99084F" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Icon/BuyerProtection" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M37.1115893,58.4116392 L37.1115893,20.7156702 L65.857966,20.7156702 C64.6292953,38.8244442 54.7936544,57.8569176 37.5395533,66.6496316 C19.0592915,57.2319145 8,36.0709166 8,16.8777999 C19.9214945,16.8777999 32.8758757,12.5216037 36.9936168,9 C41.1126131,12.5216037 53.7758281,16.8777999 66.6272971,16.8777999" id="Page-1" stroke="url(#radialGradient-1)" stroke-width="1.4"></path>
+    </g>
+</svg>
