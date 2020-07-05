@@ -209,10 +209,10 @@ var Controller = (function (UIController, BOController) {
       )
     ) {
       passwordError.innerHTML = `<pre>Your password must be have at least
-      
-      10 characters long
-      1 uppercase & 1 lowercase character
-      1 number</pre>`;
+
+10 characters long
+1 uppercase & 1 lowercase character
+1 number</pre>`;
       passwordError.style.display = "inherit";
       password.focus();
       setTimeout(() => {
