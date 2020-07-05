@@ -136,7 +136,7 @@ body {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.5)
     ),
-    url(img/hero-banner.jpg) center no-repeat;
+    url(../img/hero-banner.jpg) center no-repeat;
 }
 .main__banner-text {
   width: 50rem;
@@ -185,7 +185,7 @@ body {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.5)
       ),
-      url(img/hero-banner.jpg) center no-repeat;
+      url(../img/hero-banner.jpg) center no-repeat;
     background-size: cover;
   }
   .main__banner-text {
@@ -233,7 +233,7 @@ body {
       rgba(240, 238, 238, 0.9) 50%,
       transparent 0%
     ),
-    url(img/business-hands-laptop-office.jpg);
+    url(../img/business-hands-laptop-office.jpg);
   background-repeat: no-repeat;
   color: var(--color-grey-dark-1);
   border-radius: 0.6rem;
@@ -312,7 +312,7 @@ body {
   align-items: center;
   color: var(--color-grey-light-1);
   background: linear-gradient(90deg, transparent 50%, rgba(0, 0, 0, 0.7) 0%),
-    url(img/cover.jpg) center no-repeat;
+    url(../img/cover.jpg) center no-repeat;
   background-size: cover;
   border-radius: 0.6rem;
   width: 82rem;
