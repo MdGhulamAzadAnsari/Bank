@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////
 // UI CONTROLLER
-var UIController = (function() {
+var UIController = (function () {
   //////////////////////////////////////////////////
   // PAGES
 
@@ -30,7 +30,7 @@ var UIController = (function() {
     accountHolderName: "#account-holder-name",
     accountNumber: "#user-account",
     accountBalance: "#user-balance",
-    newAccountNo: "#new-account"
+    newAccountNo: "#new-account",
   };
 
   var mainBankAbout = document.querySelector(DOMString.main__bank);
@@ -46,25 +46,25 @@ var UIController = (function() {
     }
   }
   return {
-    showLoginPage: function() {
+    showLoginPage: function () {
       login.classList.remove("hide");
       mainBankAbout.classList.add("hide");
       signup.classList.add("hide");
       userMainPage.classList.add("hide");
     },
-    showRegisterPage: function() {
+    showRegisterPage: function () {
       signup.classList.remove("hide");
       mainBankAbout.classList.add("hide");
       login.classList.add("hide");
       userMainPage.classList.add("hide");
     },
-    showUserMainPage: function() {
+    showUserMainPage: function () {
       userMainPage.classList.remove("hide");
       mainBankAbout.classList.add("hide");
       signup.classList.add("hide");
       login.classList.add("hide");
     },
-    getRegisterationFormData: function() {
+    getRegisterationFormData: function () {
       let acNo = document.querySelector(DOMString.newAccountNo);
       let rname = document.querySelector(DOMString.rname);
       let username = document.querySelector(DOMString.rusername);
@@ -73,10 +73,10 @@ var UIController = (function() {
       let confirmPassword = document.querySelector(DOMString.rcpassword);
       return [acNo, rname, username, email, password, confirmPassword];
     },
-    getDOMString: function() {
+    getDOMString: function () {
       return DOMString;
     },
-    setAccountDetail: function() {
+    setAccountDetail: function () {
       // Remove previous customer data
       removePreviousData();
 
@@ -90,41 +90,41 @@ var UIController = (function() {
       accountBalance.innerHTML = customer.balance;
       let customerHistory = BOController.getCustomersHistory(customer.ac);
       if (customerHistory) {
-        customerHistory.forEach(newDivHtml => {
+        customerHistory.forEach((newDivHtml) => {
           document
             .querySelector(".user-info__history")
             .insertAdjacentHTML("beforeend", newDivHtml);
         });
       }
     },
-    updateBalance: function(balance) {
+    updateBalance: function (balance) {
       document.querySelector(DOMString.accountBalance).innerHTML = balance;
-    }
+    },
   };
 })();
 
 //////////////////////////////////////////////////
 // BO CONTROLLER
-var BOController = (function() {
+var BOController = (function () {
   //////////////////////////////////////////////////
   // STORE ALL CUSTOMER DATA
   var customers = [];
   var customersHistory = {};
 
   return {
-    getCustomers: function() {
+    getCustomers: function () {
       return customers;
     },
-    addCustomer: function(customer) {
+    addCustomer: function (customer) {
       customers.push(customer);
     },
-    getNewAccountNo: function() {
+    getNewAccountNo: function () {
       return customers.length + 1;
     },
-    getCustomersHistory: function(ac) {
+    getCustomersHistory: function (ac) {
       return customersHistory[ac];
     },
-    addCustomersHistory: function(ac, customerHistory) {
+    addCustomersHistory: function (ac, customerHistory) {
       let histories = customersHistory[ac];
       if (histories) {
         customersHistory[ac].push(customerHistory);
@@ -133,9 +133,9 @@ var BOController = (function() {
         customersHistory[ac].push(customerHistory);
       }
     },
-    isValidUser: function(email, password) {
+    isValidUser: function (email, password) {
       if (customers.length > 0) {
-        let validUser = customers.filter(customer => {
+        let validUser = customers.filter((customer) => {
           return customer.email == email && customer.password == password;
         });
         if (validUser.length > 0) {
@@ -146,18 +146,18 @@ var BOController = (function() {
         }
       }
       return [false, false];
-    }
+    },
   };
 })();
 
 //////////////////////////////////////////////////
 // GLOBAL APP CONTROLLER
-var Controller = (function(UIController, BOController) {
+var Controller = (function (UIController, BOController) {
   // Store Login User Data
   var currentCustomer;
 
   var DOMString = UIController.getDOMString();
-  var Customer = function(ac, name, username, email, password, balance = 0) {
+  var Customer = function (ac, name, username, email, password, balance = 0) {
     this.ac = ac;
     this.name = name;
     this.username = username;
@@ -208,7 +208,11 @@ var Controller = (function(UIController, BOController) {
         password.value
       )
     ) {
-      passwordError.innerHTML = "Please enter valid password";
+      passwordError.innerHTML = `<pre>Your password must be have at least
+      
+      10 characters long
+      1 uppercase & 1 lowercase character
+      1 number</pre>`;
       passwordError.style.display = "inherit";
       password.focus();
       setTimeout(() => {
@@ -231,31 +235,31 @@ var Controller = (function(UIController, BOController) {
 
   function clear(...fields) {
     fields[0].focus();
-    fields.forEach(e => {
+    fields.forEach((e) => {
       e.value = "";
     });
   }
 
   return {
-    currentCustomer: function() {
+    currentCustomer: function () {
       return currentCustomer;
     },
-    assignCurrentCustomer: function(customer) {
+    assignCurrentCustomer: function (customer) {
       currentCustomer = customer;
     },
-    setNewAccountNo: function() {
+    setNewAccountNo: function () {
       document.querySelector(
         DOMString.newAccountNo
       ).innerHTML = BOController.getNewAccountNo();
     },
-    registerCustomer: function() {
+    registerCustomer: function () {
       [
         acNo,
         rname,
         rusername,
         remail,
         rpassword,
-        rconfirmPassword
+        rconfirmPassword,
       ] = UIController.getRegisterationFormData();
 
       if (isValid(rname, rusername, remail, rpassword, rconfirmPassword)) {
@@ -276,7 +280,7 @@ var Controller = (function(UIController, BOController) {
         clear(rname, rusername, remail, rpassword, rconfirmPassword);
       }
     },
-    isValidLogin: function() {
+    isValidLogin: function () {
       let email = document.querySelector(DOMString.loginEmail);
       let password = document.querySelector(DOMString.loginPassword);
       let emailError = document.querySelector(DOMString.loginEmailError);
@@ -328,7 +332,7 @@ var Controller = (function(UIController, BOController) {
       password.value = "";
       return true;
     },
-    addHistory: function() {
+    addHistory: function () {
       let paymentOption = document.querySelector(DOMString.paymentOption);
       let paymentDecr = document.querySelector(DOMString.paymentDecription);
       let paymentAmount = document.querySelector(DOMString.paymentAmount);
@@ -413,7 +417,7 @@ var Controller = (function(UIController, BOController) {
       UIController.updateBalance(currentCustomer["balance"]);
       paymentDecr.value = "";
       paymentAmount.value = "";
-    }
+    },
   };
 })(UIController, BOController);
 
