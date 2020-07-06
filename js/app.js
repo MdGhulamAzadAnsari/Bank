@@ -212,7 +212,7 @@ var Controller = (function (UIController, BOController) {
 
 10 characters long
 1 uppercase & 1 lowercase character
-1 number</pre>`;
+1 number </pre>`;
       passwordError.style.display = "inherit";
       password.focus();
       setTimeout(() => {
