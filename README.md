@@ -1,2 +1,1 @@
-# Bank
-# Bank-Project-In-JavaScript
+# Bank Project In JavaScript
